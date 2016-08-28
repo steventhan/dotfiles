@@ -1,0 +1,9 @@
+[alias]
+	cl = clone
+	st = status
+	ci = commit
+	ps = push
+	br = branch
+	co = checkout
+	pl = pull
+	ft = fetch
