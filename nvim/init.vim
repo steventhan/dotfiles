@@ -7,6 +7,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'scrooloose/nerdcommenter'
+Plug 'neomake/neomake'
 
 call plug#end()
 
@@ -16,6 +18,7 @@ syntax enable
 colorscheme OceanicNext
 set background=dark
 set number
+filetype plugin on
 let g:airline_powerline_fonts = 1
 let virtual_env_slice = {
       \'can_be_empty': 1,
@@ -37,5 +40,4 @@ let g:promptline_preset = {
 if (has("termguicolors"))
     set termguicolors
 endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
+autocmd! BufWritePost * Neomake
