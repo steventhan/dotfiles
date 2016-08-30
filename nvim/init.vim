@@ -7,6 +7,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
@@ -16,6 +17,7 @@ syntax enable
 colorscheme OceanicNext
 set background=dark
 set number
+set timeoutlen=1000 ttimeoutlen=0
 let g:airline_powerline_fonts = 1
 let virtual_env_slice = {
       \'can_be_empty': 1,
