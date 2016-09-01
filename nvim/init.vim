@@ -9,6 +9,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'neomake/neomake'
+Plug 'Valloric/MatchTagAlways'
 
 call plug#end()
 
@@ -18,26 +19,12 @@ syntax enable
 colorscheme OceanicNext
 set background=dark
 set number
+set tabstop=2
+set shiftwidth=2
 filetype plugin on
 let g:airline_powerline_fonts = 1
-let virtual_env_slice = {
-      \'can_be_empty': 1,
-      \'function_name': 'virtual_env',
-      \'function_body': [
-        \'function virtual_env {',
-        \'  [ $VIRTUAL_ENV ] || return 1',
-        \'  local env=$(basename $VIRTUAL_ENV) ',
-        \'  env="($env)"',
-        \'  printf "%s" "$1$env$2"',
-        \'}']}
-let g:promptline_preset = {
-        \'a' : [ promptline#slices#host() ],
-        \'b' : [ promptline#slices#user() ],
-        \'c' : [ promptline#slices#cwd() ],
-	\'d' : [ promptline#slices#python_virtualenv() ],
-        \'y' : [ promptline#slices#vcs_branch() ],
-        \'warn' : [ promptline#slices#last_exit_code() ]}
 if (has("termguicolors"))
     set termguicolors
 endif
 autocmd! BufWritePost * Neomake
+au Filetype python setl et ts=4 sw=4
