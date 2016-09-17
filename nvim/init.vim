@@ -9,7 +9,6 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'neomake/neomake'
-Plug 'Valloric/MatchTagAlways'
 
 call plug#end()
 
