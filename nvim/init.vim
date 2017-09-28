@@ -9,6 +9,8 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'scrooloose/nerdcommenter'
 Plug 'neomake/neomake'
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
