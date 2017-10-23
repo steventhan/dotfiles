@@ -11,6 +11,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'neomake/neomake'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-surround'
+Plug 'valloric/youcompleteme'
+
 
 call plug#end()
 
