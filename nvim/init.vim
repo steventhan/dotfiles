@@ -14,6 +14,9 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
+
+language en_US
+set guicursor=
 autocmd vimenter * NERDTree
 set clipboard=unnamed
 syntax enable
