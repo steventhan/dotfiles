@@ -16,6 +16,9 @@ Plug 'valloric/youcompleteme'
 
 call plug#end()
 
+
+language en_US
+set guicursor=
 autocmd vimenter * NERDTree
 set clipboard=unnamed
 syntax enable
