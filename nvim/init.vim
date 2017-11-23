@@ -26,8 +26,10 @@ colorscheme OceanicNext
 set background=dark
 set number
 set tabstop=2
+set expandtab
 set shiftwidth=2
 filetype plugin on
+filetype plugin indent on
 let g:airline_powerline_fonts = 1
 if (has("termguicolors"))
     set termguicolors
