@@ -12,12 +12,13 @@ Plug 'neomake/neomake'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
+Plug 'sophacles/vim-processing'
 
 
 call plug#end()
 
-
 language en_US
+let g:ycm_autoclose_preview_window_after_completion=1
 set guicursor=
 autocmd vimenter * NERDTree
 set clipboard=unnamed
