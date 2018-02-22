@@ -2,6 +2,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'mhartington/oceanic-next'
+Plug 'rakr/vim-one'
+Plug 'ayu-theme/ayu-vim'
+Plug 'jonathanfilip/vim-lucius'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
@@ -12,18 +15,23 @@ Plug 'neomake/neomake'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
-
+Plug 'wlangstroth/vim-racket'
+Plug 'sophacles/vim-processing'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
 
 language en_US
 set guicursor=
+set lazyredraw
+let g:nord_comment_brightness = 15
+let java_highlight_functions = 1
 autocmd vimenter * NERDTree
 set clipboard=unnamed
 syntax enable
-colorscheme OceanicNext
-set background=dark
+colorscheme nord
+"set background=dark
 set number
 set tabstop=2
 set expandtab
@@ -36,3 +44,4 @@ if (has("termguicolors"))
 endif
 autocmd! BufWritePost * Neomake
 au Filetype python setl et ts=4 sw=4
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
