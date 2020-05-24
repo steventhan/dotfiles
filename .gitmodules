@@ -1,0 +1,9 @@
+[submodule "zsh/zsh"]
+	path = zsh/zsh
+	url = https://github.com/dracula/zsh
+[submodule "zsh/draculla-theme"]
+	path = zsh/draculla-theme
+	url = https://github.com/dracula/zsh
+[submodule "zsh/dracula"]
+	path = zsh/dracula
+	url = https://github.com/dracula/zsh

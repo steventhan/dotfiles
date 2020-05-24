@@ -14,5 +14,9 @@ touch ~/.zprofile && echo "source ~/dotfiles/.zshrc" > ~/.zprofile
 echo "Setting up .gitconfig"
 cp ~/dotfiles/.gitconfig ~/
 
+echo "Setting up oh-my-zsh theme"
+cp -r ~/dotfiles/zsh/dracula/lib ~/.oh-my-zsh/themes/
+cp ~/dotfiles/zsh/dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/
+
 source ~/.zprofile
 echo "Done"
