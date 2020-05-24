@@ -14,6 +14,5 @@ touch ~/.zprofile && echo "source ~/dotfiles/.zshrc" > ~/.zprofile
 echo "Setting up .gitconfig"
 cp ~/dotfiles/.gitconfig ~/
 
-
 source ~/.zprofile
 echo "Done"
