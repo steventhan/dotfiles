@@ -1,5 +1,6 @@
 [alias]
 	aa = add --all
+	d = diff
 	cl = clone
 	st = status
 	ci = commit
