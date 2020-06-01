@@ -1,6 +1,7 @@
 [alias]
+  a = add
 	aa = add --all
-	d = diff
+	d = diff --
 	cl = clone
 	st = status
 	ci = commit
@@ -9,3 +10,4 @@
 	co = checkout
 	pl = pull
 	ft = fetch
+  re = remote
