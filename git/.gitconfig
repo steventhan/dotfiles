@@ -11,3 +11,4 @@
 	pl = pull
 	ft = fetch
   re = remote
+  rb = rebase
