@@ -12,3 +12,7 @@
 	ft = fetch
   re = remote
   rb = rebase
+  l = log --oneline
+
+[core]
+  pager = less -F -X
